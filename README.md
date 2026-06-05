@@ -40,7 +40,7 @@ If you don't have a local WordPress project yet, run these commands:
 
 ```bash
 mkdir developer-portfolio-theme && cd developer-portfolio-theme
-ddev config --project-type=wordpress --docroot=public
+ddev config --project-type=wordpress
 ddev start
 ddev wordpress download
 ```
@@ -50,7 +50,7 @@ ddev wordpress download
 Go to your WordPress themes folder and clone this repo:
 
 ```bash
-cd public/wp-content/themes
+cd wp-content/themes
 git clone https://github.com/tamuliB0/developer-portfolio-theme.git
 ```
 
