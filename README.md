@@ -42,8 +42,10 @@ If you don't have a local WordPress project yet, run these commands:
 mkdir developer-portfolio-theme && cd developer-portfolio-theme
 ddev config --project-type=wordpress
 ddev start
-ddev wordpress download
+ddev wp core download
+ddev wp core install --url='$DDEV_PRIMARY_URL' --title="YOUR-WEBSITE-TITLE" --admin_user=admin --admin_password=admin --admin_email=admin@example.com
 ```
+Your site will be at `https://<your-ddev-project-name>.ddev.site`. Admin login: `admin` / `admin`.
 
 ### 2. Clone the Theme
 
@@ -66,7 +68,7 @@ git clone https://github.com/tamuliB0/developer-portfolio-theme.git
 
 ### 🏠 Local Development
 
-Your local site runs at: `https://developer-portfolio-theme.ddev.site`
+Your local site runs at: `https://<your-ddev-project-name>.ddev.site`
 
 ### 🌐 Live Demo
 
